@@ -1,6 +1,6 @@
+import { useContext } from "react";
 import { ClientOnly } from "react-clientside";
 import { useExternalState } from "react-stateshape";
-import { useContext } from "react";
 import { AppContext } from "../AppContext/index.ts";
 
 export const Display = () => {

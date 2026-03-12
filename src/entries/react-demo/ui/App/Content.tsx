@@ -1,5 +1,5 @@
-import { useRoute } from "react-stateshape";
 import { Suspense } from "react";
+import { useRoute } from "react-stateshape";
 import { titleMap } from "../../const/titleMap.ts";
 import { About } from "../About/lazy.tsx";
 import { Footer } from "../Footer/index.tsx";

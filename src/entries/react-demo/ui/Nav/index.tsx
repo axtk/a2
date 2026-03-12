@@ -8,7 +8,11 @@ export const Nav = () => {
       <p>
         {at("/react-demo", <span>Intro</span>, <A href="/react-demo">Intro</A>)}
         {" | "}
-        {at("/react-demo/about", <span>About</span>, <A href="/react-demo/about">About</A>)}
+        {at(
+          "/react-demo/about",
+          <span>About</span>,
+          <A href="/react-demo/about">About</A>,
+        )}
         {" | "}
         {at(
           "/react-demo/sections/1",

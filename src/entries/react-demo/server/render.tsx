@@ -1,8 +1,4 @@
-import {
-  type Controller,
-  serializeState,
-  servePipeableStream,
-} from "appstage";
+import { type Controller, serializeState, servePipeableStream } from "appstage";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 import type { SerializableAppState } from "../types/SerializableAppState.ts";

@@ -1,21 +1,20 @@
-"use strict";
 {
-function init() {
-  let container = document.querySelector(".counter");
+  function init() {
+    let container = document.querySelector(".counter");
 
-  if (!container) return;
+    if (!container) return;
 
-  let [minus, plus] = container.querySelectorAll("button");
-  let display = container.querySelector("strong");
+    let [minus, plus] = container.querySelectorAll("button");
+    let display = container.querySelector("strong");
 
-  minus.addEventListener("click", () => {
-    display.textContent = Number(display.textContent) - 1;
-  });
+    minus.addEventListener("click", () => {
+      display.textContent = Number(display.textContent) - 1;
+    });
 
-  plus.addEventListener("click", () => {
-    display.textContent = Number(display.textContent) + 1;
-  });
-}
+    plus.addEventListener("click", () => {
+      display.textContent = Number(display.textContent) + 1;
+    });
+  }
 
-init();
+  init();
 }
