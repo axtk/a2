@@ -11,13 +11,16 @@ export const render: Controller = () => {
         '<link type="image/x-icon" rel="icon" href="/favicon.svg"/>' +
         "<title>Intro</title>" +
         `<style${nonce ? ` nonce="${nonce}"` : ""}>` +
-        ".layout { max-width: 36em; margin: 0 auto; }</style>" +
-        '</head><body><div class="layout">' +
-        "<main><h1>Intro</h1>" +
-        "<p>This is demo content. Lorem ipsum dolor, " +
-        "quam velit, tincidunt vitae suscipit nullam.</p>" +
-        "</main><footer><hr><p><em>appstage</em></p></footer>" +
-        "</div></body></html>\n",
+        "body { padding: 0; margin: 0; } " +
+        "header { background: #f4e8e1; overflow: hidden; } " +
+        ".content { max-width: 42em; padding: 0 1em; margin: 0 auto; " +
+        "box-sizing: border-box; }</style>" +
+        '</head><body><header><div class="content">' +
+        '<h1>Intro</h1></div></header><div class="content">' +
+        "<main><p>This is demo content generated on the server. " +
+        "Lorem ipsum dolor, quam velit, tincidunt vitae suscipit nullam." +
+        "</p></main><footer><hr><p><em>appstage</em></p>" +
+        '<p><a href="/">Main page</a></p></footer></div></body></html>\n',
     );
   };
 };

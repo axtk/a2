@@ -1,6 +1,6 @@
 export const titleMap: Record<string, string> = {
-  "/": "Intro",
-  "/about": "About",
-  "/sections/1": "Section 1",
-  "/sections/2": "Section 2",
+  "/react-demo": "Intro",
+  "/react-demo/about": "About",
+  "/react-demo/sections/1": "Section 1",
+  "/react-demo/sections/2": "Section 2",
 };

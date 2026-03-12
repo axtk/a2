@@ -3,20 +3,12 @@ body {
   margin: 0;
 }
 header {
-  background-color: lavender;
-  padding: 1.5em;
+  background: lavender;
+  overflow: hidden;
 }
-header p {
-  margin: 1em 0 0;
-}
-.layout > .content {
-  padding: 0 1.5em;
-}
-h1 {
-  font-size: 2em;
-  line-height: 1.05;
-  margin: 0;
-}
-h2 {
-  font-size: 1.5em;
+.content {
+  max-width: 42em;
+  padding: 0 1em;
+  margin: 0 auto;
+  box-sizing: border-box;
 }

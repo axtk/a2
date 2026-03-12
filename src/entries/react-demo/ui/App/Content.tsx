@@ -21,33 +21,33 @@ export const Content = () => {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
       <body>
-        <div className="layout">
-          <header>
+        <header>
+          <div className="content">
             <h1>React Demo</h1>
             <Nav />
-          </header>
-          <div className="content">
-            {at(
-              "/react-demo",
-              <Suspense fallback={<p>Loading...</p>}>
-                <Intro />
-                <Footer />
-              </Suspense>,
-            )}
-            {at(
-              "/react-demo/about",
-              <Suspense fallback={<p>Loading...</p>}>
-                <About />
-                <Footer />
-              </Suspense>,
-            )}
-            {at(/^\/react-demo\/sections\/(?<id>\d+)\/?$/, ({ params }) => (
-              <Suspense fallback={<p>Loading...</p>}>
-                <Section id={Number(params.id)} />
-                <Footer />
-              </Suspense>
-            ))}
           </div>
+        </header>
+        <div className="content">
+          {at(
+            "/react-demo",
+            <Suspense fallback={<p>Loading...</p>}>
+              <Intro />
+              <Footer />
+            </Suspense>,
+          )}
+          {at(
+            "/react-demo/about",
+            <Suspense fallback={<p>Loading...</p>}>
+              <About />
+              <Footer />
+            </Suspense>,
+          )}
+          {at(/^\/react-demo\/sections\/(?<id>\d+)\/?$/, ({ params }) => (
+            <Suspense fallback={<p>Loading...</p>}>
+              <Section id={Number(params.id)} />
+              <Footer />
+            </Suspense>
+          ))}
         </div>
       </body>
     </html>
