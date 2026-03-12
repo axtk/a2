@@ -1,9 +1,9 @@
-import { useStore } from "@t8/react-store";
+import { useExternalState } from "react-stateshape";
 import { useContext } from "react";
 import { AppContext } from "../AppContext/index.ts";
 
 export const PlusButton = () => {
-  let [, setState] = useStore(useContext(AppContext), false);
+  let [, setState] = useExternalState(useContext(AppContext), false);
 
   let handleClick = () => {
     setState((state) => ({

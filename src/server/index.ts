@@ -1,4 +1,4 @@
-import { createApp, unhandledError, unhandledRoute } from "@t8/webapp-core";
+import { createApp, unhandledError, unhandledRoute } from "appstage";
 import { static as expressStatic } from "express";
 import { entries } from "./entries.ts";
 

@@ -1,4 +1,4 @@
-import { Router } from "@t8/react-router";
+import { RouteProvider } from "react-stateshape";
 import type { AppState } from "../../types/AppState.ts";
 import { AppContext } from "../AppContext/index.ts";
 import { Content } from "./Content.tsx";
@@ -9,9 +9,9 @@ export type AppProps = {
 };
 
 export const App = ({ href, state }: AppProps) => (
-  <Router href={href}>
+  <RouteProvider href={href}>
     <AppContext.Provider value={state}>
       <Content />
     </AppContext.Provider>
-  </Router>
+  </RouteProvider>
 );

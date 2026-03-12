@@ -1,5 +1,5 @@
 ```
-npx degit t8js/react-app my-app
+npx degit axtk/appstage-hybrid my-app
 cd my-app
 npm i
 npm start

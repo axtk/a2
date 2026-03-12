@@ -2,7 +2,7 @@ import {
   type Controller,
   serializeState,
   servePipeableStream,
-} from "@t8/webapp-core";
+} from "appstage";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 import type { SerializableAppState } from "../types/SerializableAppState.ts";

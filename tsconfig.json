@@ -1,5 +1,5 @@
 {
-  "include": ["src", "node_modules/@t8/webapp-core"],
+  "include": ["src", "node_modules/appstage"],
   "compilerOptions": {
     "noEmit": true,
     "outDir": "dist",

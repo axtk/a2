@@ -1,4 +1,4 @@
-import { useRoute } from "@t8/react-router";
+import { useRoute } from "react-stateshape";
 import { Suspense } from "react";
 import { titleMap } from "../../const/titleMap.ts";
 import { About } from "../About/lazy.tsx";
