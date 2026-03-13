@@ -1,6 +1,6 @@
 {
   "name": "appstage-hybrid",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "description": "",
   "main": "dist/server/index.js",
