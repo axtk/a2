@@ -1,6 +1,6 @@
 import { createApp, unhandledError, unhandledRoute } from "appstage";
 import { static as expressStatic } from "express";
-import { entries } from "./autoentries.ts";
+import { entries } from "./entries.ts";
 
 let app = createApp();
 

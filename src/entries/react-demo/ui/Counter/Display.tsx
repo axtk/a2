@@ -1,17 +1,17 @@
 import { useContext } from "react";
-import { ClientOnly } from "react-clientside";
+import { HydratedOnly } from "react-clientside";
 import { useExternalState } from "react-stateshape";
 import { AppContext } from "../AppContext/index.ts";
 
 export const Display = () => {
   let [state] = useExternalState(useContext(AppContext));
 
-  // Using <ClientOnly> to avoid flashing server-rendered content
-  // before retrieving the store state persistent across page reloads.
-  // (Without persistence, <ClientOnly> would be unnecessary here.)
+  // Using <HydratedOnly> to avoid flashing server-rendered content
+  // before retrieving the counter value stored in a persistent state.
+  // (Without persistence, <HydratedOnly> would be unnecessary here.)
   return (
     <strong>
-      <ClientOnly>{state.counter}</ClientOnly>
+      <HydratedOnly>{state.counter}</HydratedOnly>
     </strong>
   );
 };
