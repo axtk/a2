@@ -10,5 +10,7 @@ export const entries = (
     import("../entries/main/server.ts"),
     // react-demo
     import("../entries/react-demo/server/index.ts"),
+    // react-demo-typed-routes
+    import("../entries/react-demo-typed-routes/server/index.ts"),
   ])
 ).map(({ server }) => server);

@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { useRoute } from "react-stateshape";
 import { root } from "../../const/root.ts";
 import { titleMap } from "../../const/titleMap.ts";
+import { url } from "../../utils/url.ts";
 import { About } from "../About/lazy.tsx";
 import { Footer } from "../Footer/index.tsx";
 import { Intro } from "../Intro/lazy.tsx";
@@ -24,28 +25,28 @@ export const Content = () => {
       <body>
         <header>
           <div className="content">
-            <h1>React Demo</h1>
+            <h1>React Demo (Typed Routes)</h1>
             <Nav />
           </div>
         </header>
         <div className="content">
           {at(
-            "/react-demo",
+            url("/"),
             <Suspense fallback={<p>Loading...</p>}>
               <Intro />
               <Footer />
             </Suspense>,
           )}
           {at(
-            "/react-demo/about",
+            url("/about"),
             <Suspense fallback={<p>Loading...</p>}>
               <About />
               <Footer />
             </Suspense>,
           )}
-          {at(/^\/react-demo\/sections\/(?<id>\d+)\/?$/, ({ params }) => (
+          {at(url("/sections/:id"), ({ params }) => (
             <Suspense fallback={<p>Loading...</p>}>
-              <Section id={Number(params.id)} />
+              <Section id={params.id} />
               <Footer />
             </Suspense>
           ))}
