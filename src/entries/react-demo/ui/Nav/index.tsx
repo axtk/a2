@@ -1,4 +1,4 @@
-import { A } from "react-stateshape";
+import { A } from "react-bridgestate";
 
 export const Nav = () => (
   <nav>

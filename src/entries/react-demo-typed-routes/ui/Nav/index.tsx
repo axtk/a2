@@ -1,4 +1,4 @@
-import { A } from "react-stateshape";
+import { A } from "react-bridgestate";
 import { url } from "../../utils/url.ts";
 
 export const Nav = () => (

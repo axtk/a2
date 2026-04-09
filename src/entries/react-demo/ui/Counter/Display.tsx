@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { HydratedOnly } from "react-clientside";
-import { useExternalState } from "react-stateshape";
+import { useExternalState } from "react-bridgestate";
 import { AppContext } from "../AppContext/index.ts";
 
 export const Display = () => {

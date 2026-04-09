@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useExternalState } from "react-stateshape";
+import { useExternalState } from "react-bridgestate";
 import { AppContext } from "../AppContext/index.ts";
 
 export const PlusButton = () => {
