@@ -5,7 +5,4 @@ export let server = Router();
 
 server.use("/files-demo/-", expressStatic("src/entries/files-demo/public"));
 
-server.use(
-  "/files-demo",
-  files("src/entries/files-demo/content"),
-);
+server.use("/files-demo", files("src/entries/files-demo/content"));
