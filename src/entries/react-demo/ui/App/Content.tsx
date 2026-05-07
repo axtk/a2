@@ -18,7 +18,7 @@ export const Content = () => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>{titleMap[route.pathname]}</title>
-        <link rel="stylesheet" href={`/-${root}/ui/index.css`} />
+        <link rel="stylesheet" href={`/-${root}/index.css`} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </head>
       <body>

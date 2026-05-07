@@ -41,7 +41,7 @@ export const render: Controller = () => {
       onError(error) {
         renderingError = error;
       },
-      bootstrapModules: [`/-${root}/ui/index.js`],
+      bootstrapModules: [`/-${root}/index.js`],
       bootstrapScriptContent: `window._mainState=${serializeState(state)};`,
       nonce: req.ctx.nonce,
     });

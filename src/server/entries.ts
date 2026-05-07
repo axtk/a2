@@ -1,16 +1,12 @@
 // Populated automatically during the build phase by picking
-// all server exports from "src/entries/<entry_name>/server(/index)?.(js|ts)"
+// all server exports from "src/entries/<entry_name>/server(/index)?.(js|ts)".
+// Ignore this file if a custom set of entry exports is required.
 export const entries = (
   await Promise.all([
-    // blank-demo
     import("../entries/blank-demo/server.ts"),
-    // files-demo
     import("../entries/files-demo/server.ts"),
-    // main
     import("../entries/main/server.ts"),
-    // react-demo
     import("../entries/react-demo/server/index.ts"),
-    // react-demo-typed-routes
     import("../entries/react-demo-typed-routes/server/index.ts"),
   ])
 ).map(({ server }) => server);
